@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="countdown">
+        <div id="timer">00:00:00</div>
+    </div>
+    <div id="video-container" class="hidden">
+        <video controls width="700">
+            <source src="fotoplay20231015134656.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="birthday-border">hey it'z BoT 20!!!</div> 
+    </div>
+    
+    <div id="person-info" class="hidden">
+        <img src="happy-birthday-text-free-download-hd-11625490761jcidwofdjm.png" [
+        'p width="700" alt="Person Image" width="500" class="image-with-border">
+        <h2>Sanjiv kanth</h2>
+        <p>Date of Birth: 16-10-2003</p>
+        <p><strong>Caption of Football Team</strong></p>
+        <h1>Bio(Sanjiv):<h5> உன் அலும்ப பார்த்தவன்…
+            உங்க அப்பன் விசில கேட்டவன்…
+            குட்டி செவுத்த எட்டி பார்த்தா…
+            உசிர கொடுக்க கோடி பேரு…</h5>
+        <h3>Fan of Cristiano</h3></h1>
+    </div>
+    <div class="footer">BoT uhh Nerandaramm.....</div>
+    
+    <script>
+        window.onload = function () {
+            const countdownDate = new Date('2023-10-16 24:00:00').getTime(); // Set your countdown date here
+
+            const timer = document.getElementById('timer');
+            const videoContainer = document.getElementById('video-container');
+            const personInfo = document.getElementById('person-info');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const timeRemaining = countdownDate - now;
+
+                if (timeRemaining > 0) {
+                    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                    timer.innerHTML = `${hours}h ${minutes}m ${seconds}s to Go`;
+                } else {
+                    timer.innerHTML = "Happy 2nd Decade of birthday da Sanjiv";
+                    videoContainer.classList.remove('hidden');
+                    personInfo.classList.remove('hidden');
+                }
+            }
+
+            updateCountdown();
+            const countdownInterval = setInterval(updateCountdown, 1000);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 10px dashed #ff0000; 
+    padding: 20px;
+}
+
+.countdown {
+    font-size: 36px;
+    color: #333;
+    background-color: #fff;
+    border: 2px dashed #ff0000; 
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px #888;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#video-container {
+    border: 4px dashed #ff0000; 
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+#birthday-border {
+    
+    z-index: 1; 
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 4px dashed #ff0000; 
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: #ff0000; 
+}
+
+
+#person-info {
+    /* display: none;  */
+    text-align: center;
+    padding: 20px;
+    border: 4px dashed #ff0000; 
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #888;
+    margin: 20px;
+}
+
+.image-with-border {
+    border: 2px solid #ff0000; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#person-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+#person-info h1 {
+    font-size: 24px;
+    color: black;
+}
+#person-info h3 {
+    font-size: 35px;
+    color:orangered;
+}
+#person-info h5 {
+    font-size: 24px;
+    color: grey;
+}
+
+#person-info p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#person-info strong {
+    font-size: 30px;
+    color: #ff0000; 
+}
+
+
+
+
+
+.footer {
+    border-top: 2px dashed #ff0000;
+    color:#ff0000; 
+    padding ;: 20px
+    color:#ff0000; 
+    font-size: 40px; 
+}
